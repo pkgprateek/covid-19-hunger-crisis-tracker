@@ -56,7 +56,7 @@ class HomeController extends Controller
         }
         else {
             Auth::logout();
-            throw ValidationException::withMessages(['username' => 'These credentials do not NGO login records.']);
+            throw ValidationException::withMessages(['username' => 'These credentials do not match NGO login records.']);
         }
     }
     
